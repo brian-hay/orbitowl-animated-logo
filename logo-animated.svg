@@ -1,0 +1,383 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 
+
+  *******************************
+  **                           **
+  **  Copyright 2016 OrbitOwl  **
+  **  http://www.OrbitOwl.com  **
+  **                           **
+  **  The OrbitOwl logo is a   **
+  **  registered trademark of  **
+  **  Virtual Realms Pty Ltd   **
+  **                           **
+  *******************************
+
+-->
+
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+   viewBox="0 0 1570 324" style="enable-background:new 0 0 1570 324;" xml:space="preserve"  onload="animateLogo()">
+
+<defs>
+
+  <radialGradient id="primary-radial-gradient" cx="30%" cy="30%" r="50%" fx="30%" fy="30%">
+    <stop offset="0%" stop-color="#006AD5" />
+    <stop offset="100%" stop-color="#00468C" />
+  </radialGradient>
+
+  <linearGradient id="primary-linear-gradient" gradientUnits="userSpaceOnUse" x1="0" y1="37" x2="0" y2="262">
+    <stop  offset="0" style="stop-color:#006AD5"/>
+    <stop  offset="1" style="stop-color:#00468C"/>
+  </linearGradient>
+
+  <radialGradient id="secondary-radial-gradient" cx="30%" cy="30%" r="50%" fx="30%" fy="30%">
+    <stop offset="0%" stop-color="#555" />
+    <stop offset="100%" stop-color="#000" />
+  </radialGradient>
+
+  <pattern id="gradient-ring" patternUnits="userSpaceOnUse" width="324" height="324">
+    <image xlink:href="gradient-ring-ccw.png" x="0" y="0" width="324" height="324" />
+  </pattern>
+
+  <mask id="orbit-mask">
+    <path class="mask" d="M6,257.75c0,24.85,69.84,45,156,45s156-20.15,156-45s-69.84-45-156-45S6,232.9,6,257.75z
+    M30,246.25c0-17.95,59.1-32.5,132-32.5s132,14.55,132,32.5s-59.1,32.5-132,32.5S30,264.2,30,246.25z"/>
+  </mask>
+
+  <mask id="left-eye-mask">
+    <rect id="left-eyelid" class="mask" x="95" y="65.4" width="55" height="55" transform-origin="50% 50%" />
+  </mask>
+
+  <mask id="right-eye-mask">
+    <rect id="right-eyelid" class="mask" x="174" y="65.4" width="55" height="55" transform-origin="50% 50%" />
+  </mask>
+
+</defs>
+
+<style type="text/css">
+
+  .primary-radial-gradient {
+    fill: url(#primary-radial-gradient);
+    stroke: #fff;
+    stroke-width: 5;
+  }
+
+  .primary-linear-gradient {
+    fill: url(#primary-linear-gradient);
+    stroke: #fff;
+    stroke-width: 5;
+  }
+
+  .secondary-radial-gradient {
+    fill: url(#secondary-radial-gradient);
+    stroke: #fff;
+    stroke-width: 5;
+  }
+
+  .secondary-no-stroke {
+    fill: url(#secondary-radial-gradient);
+    stroke: none;
+  }
+
+  #underline {
+    fill: #00468C;
+    stroke: #fff;
+    stroke-width: 5;
+    opacity: 0;
+  }
+
+  #hit-target-screen {
+    fill: #fff;
+  }
+
+  .outline {
+    fill: #fff;
+    stroke: none;
+  }
+
+  .gradient-ring {
+    fill: url(#gradient-ring);
+  }
+
+  .mask {
+    fill: #fff;
+    stroke: none;
+  }
+
+  .debug {
+    fill: #f00;
+  }
+
+</style>
+
+<a xlink:href="http://orbitowl.com.au" target="_parent" onmouseover="turnLogoHead(-28); underlineLogo(true)" onmouseout="turnLogoHead(0); underlineLogo(false)">
+
+  <rect id="underline" x="162.5" y="285" width="1400" height="27"/>
+
+  <g id="owl-parent" transform="translate(8 22) scale(0.95 0.95)">
+
+    <g id="orbit-group">
+
+      <path id="orbit-mask-outline" class="outline" d="M162,207.75c-42.125,0-81.793,4.751-111.696,13.377
+        C18.049,230.432,1,243.096,1,257.75s17.049,27.318,49.304,36.623C80.207,302.999,119.875,307.75,162,307.75
+        s81.793-4.751,111.696-13.377C305.951,285.068,323,272.404,323,257.75s-17.049-27.318-49.304-36.623
+        C243.793,212.501,204.125,207.75,162,207.75L162,207.75z M162,273.75c-34.867,0-67.591-3.329-92.142-9.374
+        C42.342,257.602,35,249.795,35,246.25s7.342-11.352,34.858-18.126c24.552-6.045,57.275-9.374,92.142-9.374
+        s67.591,3.329,92.142,9.374C281.658,234.898,289,242.705,289,246.25s-7.342,11.352-34.858,18.126
+        C229.591,270.421,196.867,273.75,162,273.75L162,273.75z"/>
+
+      <g style="mask: url(#orbit-mask)">
+
+        <g id="orbital-streak-path-parent" transform="translate(-32 206) scale(1.2 0.3)">
+
+          <rect id="orbital-streak-path" class="gradient-ring" transform-origin="50% 50%" width="324" height="324" />
+
+        </g>
+
+      </g>
+
+      <g id="satellite-group" transform-origin="11 11">
+
+        <circle id="satellite" class="secondary-radial-gradient" cx="0" cy="324" r="19.5"/>
+
+      </g>
+
+    </g>
+
+    <g id="owl-body-group">
+
+      <path id="body" class="primary-radial-gradient" d="M163,262.167c-47.725,0-72.834-5.854-81.413-18.979C70.736,
+        226.584,65,207.697,65,188.57c0-54.076,43.962-98.07,98-98.07c54.037,0,98,43.994,98,98.07c0,18.034-5.564,
+        36.386-16.54,54.543C236.387,256.469,212.025,262.167,163,262.167z"/>
+
+      <path id="right-foot" class="secondary-radial-gradient" d="M182.883,
+        259.931c-0.586-1.838-0.883-3.745-0.883-5.67c0-10.201,8.299-18.5,18.5-18.5s18.5,8.299,18.5,18.5c0,0.521-0.023,
+        1.048-0.073,1.611l-0.16,1.849l-1.815,0.381c-8.482,1.783-18.808,2.949-31.565,3.566l-1.919,0.093L182.883,259.931z"/>
+
+      <path id="left-foot" class="secondary-radial-gradient" d="M142.594,
+        261.727c-12.374-0.57-22.971-1.724-31.497-3.428l-1.817-0.363l-0.181-1.844c-0.067-0.684-0.098-1.266-0.098-1.831
+        c0-10.201,8.299-18.5,18.5-18.5s18.5,8.299,18.5,18.5c0,1.967-0.308,3.901-0.916,5.75l-0.593,1.804L142.594,261.727z"/>
+
+    </g>
+
+    <g id="owl-head-group" transform-origin="54 37">
+
+      <path id="ears" class="primary-radial-gradient" d="M112.527,95.4L61.759,30.358c-3.001-3.843-3.938-6.991-2.785-9.356
+        c0.512-1.05,1.91-2.811,5.52-2.811c1.416,0,3.1,0.265,5.006,0.788c17.026,4.676,51.617,12.521,92,12.521
+        c37.722,0,75.662-8.129,94.92-12.974c1.741-0.438,3.307-0.66,4.652-0.66c3.868,0,5.356,1.867,5.899,2.98
+        c1.199,2.457,0.279,5.657-2.732,9.513L213.473,95.4H112.527z"/>
+
+      <polygon id="beak" class="secondary-radial-gradient" points="108.625,90.4 217.376,90.4 163,160.063  "/>
+
+      <path id="right-eye-socket" class="primary-radial-gradient" d="M165,93c0-25.41,20.59-46,46-46s46,20.59,
+        46,46s-20.59,46-46,46S165,118.41,165,93z"/>
+      
+      <g id="right-eye-group" style="mask: url(#right-eye-mask)">
+
+        <circle id="right-eye-outline" class="outline" cx="202.5" cy="92.9" r="21"/>
+
+        <path id="right-eye" class="secondary-no-stroke"  transform-origin="8 8" d="M202.5,76.9c-2.65,0-5.142,
+          0.654-7.342,1.793L201.19,91.7l-12.964-6.003c-1.095,2.167-1.726,4.609-1.726,7.203c0,8.84,7.16,16,
+          16,16s16-7.16,16-16S211.34,76.9,202.5,76.9z"/>
+
+      </g>
+
+      <path id="left-eye-socket" class="primary-radial-gradient" d="M113.5,141.5C86.757,141.5,65,119.743,65,
+        93s21.757-48.5,48.5-48.5S162,66.257,162,93S140.243,141.5,113.5,141.5z"/>
+
+      <g id="left-eye-group" style="mask: url(#left-eye-mask)">
+
+        <circle id="left-eye-outline" class="outline" cx="123.5" cy="92.9" r="21"/>
+
+        <path id="left-eye" class="secondary-no-stroke" transform-origin="8 8" d="M123.5,76.9c-2.65,0-5.142,
+          0.654-7.342,1.793L122.19,91.7l-12.964-6.003c-1.095,2.167-1.726,4.609-1.726,7.203c0,8.84,7.16,16,
+          16,16s16-7.16,16-16S132.34,76.9,123.5,76.9z"/>
+
+      </g>
+
+    </g>
+
+  </g>
+
+  <g id="orbitowl-text-group">
+
+    <path id="orbitowl-text-o1" class="primary-linear-gradient" d="M431.513,262.863c-63.431,
+      0-115.035-51.604-115.035-115.035c0-63.431,51.604-115.036,115.035-115.036s115.035,51.605,115.035,
+      115.036C546.548,211.259,494.943,262.863,431.513,262.863z M431.513,68.167c-43.926,0-79.661,
+      35.736-79.661,79.662s35.735,79.662,79.661,79.662s79.661-35.736,79.661-79.662S475.438,68.167,
+      431.513,68.167z" />
+
+    <path id="orbitowl-text-r" class="primary-linear-gradient" d="M565.83,258.915
+      V90.706h35.374v12.787c15.439-11.77,34.36-18.249,53.844-18.345l2.513-0.013v35.369l-2.481,0.019
+      c-29.552,0.224-53.205,23.542-53.85,53.085l-0.025,1.181v84.127H565.83z" />
+
+    <path id="orbitowl-text-b" class="primary-linear-gradient" d="M769.801,264.483c-19.704,
+      0-38.842-6.535-54.451-18.499v14.196h-35.374V37.45h35.374v66.187c15.61-11.966,34.746-18.5,
+      54.451-18.5c49.446,0,89.673,40.227,89.673,89.673C859.474,224.256,819.247,264.483,769.801,
+      264.483z M769.801,120.511c-29.941,0-54.3,24.358-54.3,54.299c0,29.94,24.358,54.299,54.3,
+      54.299c29.94,0,54.299-24.358,54.299-54.299C824.1,144.87,799.741,120.511,769.801,120.511z" />
+
+    <path id="orbitowl-text-i" class="primary-linear-gradient" d="M898.688,74.545c-11.595,
+      0-21.028-9.433-21.028-21.028c0-11.595,9.434-21.028,21.028-21.028s21.028,9.433,21.028,21.028
+      C919.717,65.112,910.283,74.545,898.688,74.545z M881.002,260.181V90.749h35.374v169.432H881.002z" />
+
+    <path id="orbitowl-text-t" class="primary-linear-gradient" d="M968.933,
+      258.915V126.181h-29.514V90.807h29.514V37.653h35.374v53.154h30.728v35.374h-30.728v132.734H968.933z" />
+
+    <path id="orbitowl-text-o2" class="primary-linear-gradient" d="M1168.082,262.863c-63.431,
+      0-115.035-51.604-115.035-115.035c0-63.431,51.604-115.036,115.035-115.036s115.035,51.605,115.035,
+      115.036C1283.117,211.259,1231.513,262.863,1168.082,262.863z M1168.082,68.167c-43.925,0-79.661,
+      35.736-79.661,79.662s35.736,79.662,79.661,79.662c43.926,0,79.661-35.736,79.661-79.662S1212.008,
+      68.167,1168.082,68.167z" />
+
+    <path id="orbitowl-text-w" class="primary-linear-gradient" d="M1426.438,
+      258.561l-26.37-98.216l-26.317,98.216h-35.125l-44.89-167.45h36.621l25.82,96.361l25.82-96.361h36.14l25.82,
+      96.361l25.82-96.361h36.621l-44.867,167.608L1426.438,258.561z" />
+
+    <path id="orbitowl-text-l" class="primary-linear-gradient" d="M1525.604,260.181V37.45h35.374v222.73H1525.604z" />
+
+  </g>
+
+  <rect id="hit-target-screen" fill-opacity="1" width="1570" height="324" />
+
+</a>
+
+<script xlink:href="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js" />
+
+<script type="text/javascript"><![CDATA[
+
+  function animateLogo() {
+
+    // Common settings for orbital streak + satellite animation.
+    var duration = 3;
+    var repeat = -1;
+    var easeType = Linear.easeNone;
+    var spinDir = -1; // 1 for clockwise, -1 for counterclockwise. Note: requires gradient-ring-ccw.png in logo.svg.
+
+    // Explicitly set some transform origins.
+    var centre = {transformOrigin:"50% 50%"};
+    TweenLite.set("#orbital-streak-path", centre);
+    TweenLite.set("#satellite-group", centre);
+    TweenLite.set("#owl-head-group", centre);
+    TweenLite.set("#left-eye", centre);
+    TweenLite.set("#right-eye", centre);
+
+    // Spin orbital streak.
+    TweenMax.to("#orbital-streak-path", duration, {rotation:360 * spinDir, repeat:repeat, ease:easeType});
+
+    // Spin the satellite in unison with the orbital streak.
+    var tl = new TimelineMax({repeat:repeat});
+    var id = "#satellite-group";
+    var precision = 30; // 30 is the sweet spot.
+    var timeInc = duration / precision;
+    var minScale = 0.5; // 0.7 good
+    var maxScale = 1.35; // 1.2 good
+    var firstX, firstY, firstScale;
+    for (var i = 0; i < precision; i++) {
+
+      // Calculate point on circle.
+      var a = Math.PI * 2 * i / precision * spinDir;
+      var x = Math.cos(a); 
+      var y = Math.sin(a);
+
+      // Scale satellite based on proximity (larger Y values further away).
+      var scale = minScale + (((y + 1) / 2) * (maxScale - minScale));
+
+      // Adjust for local coordinates.
+      x = x * 286 / 2 + 162;
+      y = y * 77 / 2 - 73;
+
+      if (i == 0) {
+
+        // Set initial values.
+        TweenLite.set(id, {scale:scale, x:x, y:y});
+
+        // Save initial values to tack onto end for smooth looping.
+        firstX = x;
+        firstY = y;
+        firstScale = scale;
+
+      } else {
+        
+        // Add a tween.
+        tl.add(TweenLite.to(id, timeInc, {x:x, y:y, scale:scale, ease:easeType}));
+
+      }
+    }
+
+    // Add an extra tween back to the start, for smooth looping.
+    tl.add(TweenLite.to(id, timeInc, {x:firstX, y:firstY, scale:firstScale, ease:easeType}));
+
+    // Begin blinking of owl's eyes.
+    blinkLogoEyes();
+
+    // Begin bobbing head of owl.
+    //bobLogoHead();
+
+    // Fade on logo.
+    TweenMax.to("#hit-target-screen", 3, {fillOpacity:0, ease:Sine.easeInOut});    
+  }
+
+  // Underline logo.
+  function underlineLogo(underline) {
+    var opacity = underline ? 1 : 0;
+    TweenMax.to("#underline", 1, {opacity:opacity, ease:Sine.easeInOut});    
+  }
+
+  // Turn head of owl.
+  function turnLogoHead(deg) {
+    var t = 0.5;
+    var easeType = Sine.easeInOut;
+
+    // Rotate head.
+    TweenLite.to("#owl-head-group", t, {rotation:deg, ease:easeType});
+
+    // Rotate eyes in opposite direction (so that "glint" on eyes doesn't change).
+    TweenLite.to("#left-eye", t, {rotation:-deg, ease:easeType});
+    TweenLite.to("#right-eye", t, {rotation:-deg, ease:easeType});
+  }
+
+  // Bob head of owl.
+  function bobLogoHead() {
+
+    // Bob head.
+    TweenMax.to("#owl-head-group", 0.5, {y:15, ease:Sine.easeInOut, repeat:1, yoyo:true});
+
+    // Bob head again after a while.
+    var delay = 10 + (Math.random() * 10);
+    TweenLite.delayedCall(delay, bobLogoHead);
+  }
+
+  // Blink eyes of owl either together or individually at semi-random intervals.
+  function blinkLogoEyes() {
+
+    // Blink one or both eyes.     
+    if (Math.random() > 0.7) {
+
+      // Blink one eye only.
+      if (Math.random() > 0.5) {
+        blinkLogoEye("#left-eyelid");
+      } else {
+        blinkLogoEye("#right-eyelid");
+      }
+    } else {
+
+      // Blink both eyes.
+      blinkLogoEye("#left-eyelid");
+      blinkLogoEye("#right-eyelid");
+    }
+
+    // Blink eyes again after a while.
+    var delay = 5 + (Math.random() * 5);
+    TweenLite.delayedCall(delay, blinkLogoEyes);
+  }
+
+  // Blink a single eye.
+  function blinkLogoEye(eye) {
+    TweenMax.to(eye, 0.1, {attr:{height:0, y:93}, repeat:1, yoyo:true});
+  }
+
+]]></script>
+
+</svg>
